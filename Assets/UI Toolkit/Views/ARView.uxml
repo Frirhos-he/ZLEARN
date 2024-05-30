@@ -1,0 +1,63 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/global_styles.uss?fileID=7433441132597879392&amp;guid=3cb404f23ae9e48198a4475bae61ee58&amp;type=3#global_styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/settings_view_styles.uss?fileID=7433441132597879392&amp;guid=58146fda9244140ca8e9328c7a8e108d&amp;type=3#settings_view_styles" />
+    <ui:VisualElement style="flex-grow: 1; width: 100%; height: 0;">
+        <SafeAreaManager name="SafeAreaManager">
+            <ui:VisualElement name="ARViewContainer" style="flex-grow: 1; width: 100%; height: 100%; align-items: center; justify-content: flex-start;">
+                <ui:VisualElement name="BackHomeButtonContainer" class="icon-button-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                    <MyButton focusable="true" name="BackHomeButton" class="icon-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/home_white_24dp.svg?fileID=7388822144124034973&amp;guid=2f4f73e3ce9a746d3a1a799a0748b911&amp;type=3#home_white_24dp&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TitleContainer" style="flex-grow: 0; width: auto; margin-top: 50px; background-color: rgba(217, 217, 217, 0.63); padding-top: 10px; padding-right: 30px; padding-bottom: 20px; padding-left: 30px; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px;">
+                    <ui:Label tabindex="-1" text="Ch. 2: Data Structures" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ARChapterNameLabel" class="caption-label" style="color: rgb(27, 27, 27); -unity-font-style: bold; font-size: 20px;" />
+                    <ui:Label tabindex="-1" text="Linked List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ARChapterTopicNameLabel" class="view-header" style="color: rgb(27, 27, 27); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 48px; white-space: nowrap;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="FeedbackButtonContainer" class="icon-button-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; left: auto; right: 50px;">
+                    <MyButton focusable="true" name="FeedbackButton" class="icon-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/feedback_white_24dp.svg?fileID=7388822144124034973&amp;guid=f9dfb47a272ea453a999e661fc1acccf&amp;type=3#feedback_white_24dp&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SkipButtonContainer" class="icon-button-container" style="flex-grow: 1; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; left: auto; right: 50px; top: auto; bottom: 50px;">
+                    <MyButton focusable="true" name="SkipButton" class="icon-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/fast_forward_white_24dp.svg?fileID=7388822144124034973&amp;guid=5565663b4bda84d08bbaa2942518a599&amp;type=3#fast_forward_white_24dp&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </SafeAreaManager>
+        <ui:VisualElement name="DialogContainer" class="dialog-container" style="display: none;">
+            <ui:VisualElement name="FeedbackFormDialog" class="feedback-popup" style="height: 70%; display: none;">
+                <ui:Label tabindex="-1" text="Tell us what could be improved" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FeedbackTitle" class="popup-header" style="font-size: 50px;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseFeedbackButton" class="icon-button" style="position: absolute; top: 50px; right: 50px; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/close_white_24dp.svg?fileID=7388822144124034973&amp;guid=4ed5327d5baec452893acce61ff753ff&amp;type=3#close_white_24dp&apos;); -unity-background-scale-mode: scale-and-crop; background-color: rgba(0, 0, 0, 0); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 40px; height: 40px; color: rgba(27, 27, 27, 0); -unity-background-image-tint-color: rgb(0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                <ui:VisualElement name="FeedbackFormContainer" style="flex-grow: 0; width: 100%; height: 100%; align-items: center; justify-content: center;">
+                    <ui:VisualElement style="flex-grow: 0; flex-direction: row; align-items: center; width: 100%; justify-content: center; padding-bottom: 50px;">
+                        <ui:VisualElement>
+                            <ui:Toggle value="false" name="QuestionErrorToggle" style="width: auto; flex-direction: row-reverse; margin-top: 0; margin-right: 0; margin-bottom: 50px; margin-left: 0;" />
+                            <ui:Toggle name="ConceptToggle" style="flex-direction: row-reverse; margin-top: 0; margin-right: 0; margin-bottom: 50px; margin-left: 0;" />
+                            <ui:Toggle name="OtherToggle" style="flex-direction: row-reverse; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-grow: 0;">
+                            <ui:Label tabindex="-1" text="There is an error in the question" parse-escape-sequences="true" display-tooltip-when-elided="true" class="unity-toggle__label" style="-unity-text-align: middle-left; margin-bottom: 50px; margin-right: 0; padding-left: 20px;" />
+                            <ui:Label tabindex="-1" text="The concept is poorly explained" parse-escape-sequences="true" display-tooltip-when-elided="true" class="unity-toggle__label" style="-unity-text-align: middle-left; margin-bottom: 50px; margin-right: 0; margin-left: 0; padding-left: 20px;" />
+                            <ui:Label tabindex="-1" text="Something else went wrong" parse-escape-sequences="true" display-tooltip-when-elided="true" class="unity-toggle__label" style="-unity-text-align: middle-left; margin-bottom: 0; margin-right: 0; margin-left: 0; padding-left: 20px; margin-top: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:TextField picking-mode="Ignore" multiline="true" name="CommentTextField" max-length="140" style="max-width: 800px; height: 30%; margin-top: 0; margin-right: 0; margin-bottom: 35px; margin-left: 0;" />
+                    <ui:Button text="SUBMIT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SendFeedbackButton" class="button-primary" style="margin-bottom: 50px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="FeedbackConfirmationDialog" class="feedback-popup" style="height: 30%; justify-content: center; align-items: center; display: none; width: 55%;">
+                <ui:Label tabindex="-1" text="Thank you for your feedback!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FeedbackConfirmationTitle" class="popup-header" style="font-size: 50px; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0;" />
+                <ui:Button text="CLOSE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseFeedbackConfirmDialogButton" class="button-primary" style="background-color: rgb(176, 176, 176);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="GoHomeConfirmationDialog" class="feedback-popup" style="height: 30%; justify-content: center; align-items: center; display: none; width: 55%;">
+                <ui:Label tabindex="-1" text="Are you sure you want to exit the explanation?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoHomeConfirmationTitle" class="popup-header" style="font-size: 50px; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0; white-space: normal; padding-right: 50px; padding-top: 50px; padding-bottom: 50px; padding-left: 50px;" />
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; width: 100%; justify-content: center;">
+                    <ui:Button text="NO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoHomeNoButton" class="button-primary" style="background-color: rgb(176, 176, 176); margin-right: 25px;" />
+                    <ui:Button text="YES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoHomeYesButton" class="button-primary" style="background-color: rgb(249, 170, 51); margin-left: 25px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="SkipDemoConfirmationDialog" class="feedback-popup" style="height: 30%; justify-content: center; align-items: center; display: none; width: 55%;">
+                <ui:Label tabindex="-1" text="Are you sure you want to skip the explanation and go to the quiz?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkipDemoConfirmationTitle" class="popup-header" style="font-size: 50px; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0; white-space: normal; padding-right: 50px; padding-top: 50px; padding-bottom: 50px; padding-left: 50px;" />
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; width: 100%; justify-content: center;">
+                    <ui:Button text="NO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkipDemoNoButton" class="button-primary" style="background-color: rgb(176, 176, 176); margin-right: 25px;" />
+                    <ui:Button text="YES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SkipDemoYesButton" class="button-primary" style="background-color: rgb(249, 170, 51); margin-left: 25px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

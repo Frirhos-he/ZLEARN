@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318a9aecae3fb8e49816f2c92f5e81b2, type: 3}
+  m_Name: ARScene
+  m_EditorClassIdentifier: 
+  m_SceneAsset: {fileID: 102900000, guid: 6bdce89659816455b9f906fc62d19910, type: 3}
+  m_Guids:
+  - 81bd2d92f1f03724b9c0e0e3823f0693
+  - 8dcab0d9a8a6049aa87e62382b7727be
+  - b1372917e0c5b9d4d834c98cbd690ec2
+  - 7f0cbd179fe1f2749a08cde5f4cbd1d6
+  - 0000000000000000f000000000000000
+  m_Assets:
+  - m_FileIds: f2459c9508480843
+    m_Assets:
+    - {fileID: 4830189802061841906, guid: 81bd2d92f1f03724b9c0e0e3823f0693, type: 3}
+  - m_FileIds: 40f3ad0000000000
+    m_Assets:
+    - {fileID: 11400000, guid: 8dcab0d9a8a6049aa87e62382b7727be, type: 2}
+  - m_FileIds: 061db4831d05a47f
+    m_Assets:
+    - {fileID: 9197481963319205126, guid: b1372917e0c5b9d4d834c98cbd690ec2, type: 3}
+  - m_FileIds: ce437fe963fe6e6b
+    m_Assets:
+    - {fileID: 7741404514569110478, guid: 7f0cbd179fe1f2749a08cde5f4cbd1d6, type: 3}
+  - m_FileIds: 4028000000000000
+    m_Assets:
+    - {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_PrefabGuids:
+  - c71a0527f22a0d64caed2f3714b3021e
+  m_Prefabs:
+  - {fileID: 5483666329254865953, guid: c71a0527f22a0d64caed2f3714b3021e, type: 3}

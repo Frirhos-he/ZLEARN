@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b90019c7-4249-4b43-849d-41e06d661c57" name="Changes" comment="resize objects">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zlearn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zlearn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/chapters.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/chapters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Binary conversion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Binary conversion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Computer Architecture.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Computer Architecture.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Flowchart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AR/ARScenes/Flowchart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResizeObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResizeAndRotateObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResizeObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ResizeAndRotateObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/FacingCameraCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/FacingCameraCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlaneManagerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlaneManagerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ar-explanation" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f6650f702d1247c2a5311a89b759ba03176200/3a/ba29dfc9/Label.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f6650f702d1247c2a5311a89b759ba03176200/8b/5946b224/StyleFloat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/dd/64b0661f/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Uni/HCI/Zlearn/Assets/Prefabs/AR/ARScenes/Binary conversion.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Uni/HCI/Zlearn/Assets/Prefabs/AR/ARScenes/Binary conversion.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Uni/HCI/Zlearn/Assets/Prefabs/AR/ARScenes/Binary conversion.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ResizeObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/ARButtonManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI Toolkit/Scripts/AchievementListPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI Toolkit/Scripts/ChapterListPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Utils/StringExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_FontAssetCreatorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Layout/LayoutGroupScaling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Windows/GeneratePropertyProvidersWindow/GeneratePropertyProvidersPage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@5.1.1/Editor/Simulation/SimulationSettingsBuildProcessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@5.1.1/Editor/Simulation/XREnvironmentViewManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aATnhVexMF3LY80EO6qBKHtMDu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ar-explanation-scenes&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\laera\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\laera\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\laera\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Unity editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Uni\HCI\Zlearn -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Uni\HCI\Zlearn" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Unity editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Uni\HCI\Zlearn -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Uni\HCI\Zlearn" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Unity editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Uni\HCI\Zlearn -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Uni\HCI\Zlearn" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\programs\Unity\Unity editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Uni\HCI\Zlearn -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Uni\HCI\Zlearn" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b90019c7-4249-4b43-849d-41e06d661c57" name="Changes" comment="" />
+      <created>1703760554375</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703760554375</updated>
+      <workItem from="1703760559985" duration="1373000" />
+      <workItem from="1703886206930" duration="893000" />
+      <workItem from="1703887309407" duration="14432000" />
+      <workItem from="1704018238631" duration="15627000" />
+      <workItem from="1704303693349" duration="1381000" />
+      <workItem from="1704536072605" duration="29802000" />
+      <workItem from="1704800686938" duration="17717000" />
+      <workItem from="1705483493610" duration="3651000" />
+      <workItem from="1706033642565" duration="666000" />
+      <workItem from="1706090917462" duration="23081000" />
+      <workItem from="1706547771412" duration="5161000" />
+    </task>
+    <task id="LOCAL-00001" summary="[WIP] add view">
+      <option name="closed" value="true" />
+      <created>1703968591558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703968591558</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[WIP] read questions from file">
+      <option name="closed" value="true" />
+      <created>1704021454099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704021454099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[WIP] add answer selection">
+      <option name="closed" value="true" />
+      <created>1704208683903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704208683903</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add answer selection">
+      <option name="closed" value="true" />
+      <created>1704305077120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704305077120</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[WIP] quiz summary">
+      <option name="closed" value="true" />
+      <created>1704814320946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704814320946</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add quiz summary">
+      <option name="closed" value="true" />
+      <created>1704817107984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704817107984</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add data persistence and add skip to quiz in AR view">
+      <option name="closed" value="true" />
+      <created>1704879515126</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704879515126</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add retry and next button">
+      <option name="closed" value="true" />
+      <created>1704880378086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704880378086</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix .selected style">
+      <option name="closed" value="true" />
+      <created>1704880444926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704880444926</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[WIP] AR scene 1">
+      <option name="closed" value="true" />
+      <created>1706215801470</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706215801470</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add flowchart scene">
+      <option name="closed" value="true" />
+      <created>1706448087181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706448087181</updated>
+    </task>
+    <task id="LOCAL-00012" summary="bug fixes">
+      <option name="closed" value="true" />
+      <created>1706516614005</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706516614005</updated>
+    </task>
+    <task id="LOCAL-00013" summary="resize objects">
+      <option name="closed" value="true" />
+      <created>1706556720692</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706556720693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="[WIP] add view" />
+    <MESSAGE value="[WIP] read questions from file" />
+    <MESSAGE value="[WIP] add answer selection" />
+    <MESSAGE value="add answer selection" />
+    <MESSAGE value="[WIP] quiz summary" />
+    <MESSAGE value="add quiz summary" />
+    <MESSAGE value="Add data persistence and add skip to quiz in AR view" />
+    <MESSAGE value="add retry and next button" />
+    <MESSAGE value="fix .selected style" />
+    <MESSAGE value="[WIP] AR scene 1" />
+    <MESSAGE value="Add flowchart scene" />
+    <MESSAGE value="bug fixes" />
+    <MESSAGE value="resize objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="resize objects" />
+  </component>
+</project>

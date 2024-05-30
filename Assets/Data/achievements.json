@@ -1,0 +1,28 @@
+{
+  "achievements": [
+    {
+      "conditions": {
+        "reachLeaderboardPlace": 3
+      },
+      "description": "Reach the top 3 at least once",
+      "name": "On Top of the World",
+      "points": 100
+    },
+    {
+      "conditions": {
+        "completeNamedTopic": "Binary conversion"
+      },
+      "description": "Complete the Binary conversion topic",
+      "name": "Learning bit by bit",
+      "points": 20
+    },
+    {
+      "conditions": {
+        "interactWithArObject": true
+      },
+      "description": "Interact with an AR object",
+      "name": "Knowledge seeker",
+      "points": 15
+    }
+  ]
+}

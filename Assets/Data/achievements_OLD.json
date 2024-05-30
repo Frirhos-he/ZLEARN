@@ -1,0 +1,91 @@
+{
+    "achievements": [
+        {
+            "conditions": {
+                "completedTopics": 5
+            },
+            "description": "Complete 5 topics",
+            "name": "The Marathon",
+            "points": 50
+        },
+        {
+            "conditions": {
+                "quizWithoutErrors": 1
+            },
+            "description": "Complete a quiz with no errors",
+            "name": "The Perfectionist",
+            "points": 30
+        },
+        {
+            "conditions": {
+            },
+            "description": "Interact 20 times with 30 models",
+            "name": "Move 'em all",
+            "points": 40
+        },
+        {
+            "conditions": {
+            },
+            "description": "Reach the top 3 at least once",
+            "name": "On Top of the World",
+            "points": 100
+        },
+        {
+            "conditions": {
+				"completedTopics": 1
+            },
+            "description": "Complete a topic",
+            "name": "Let's get it started",
+            "points": 10
+        },
+        {
+            "conditions": {
+				"completedChapters": 5
+            },
+            "description": "Complete all chapters",
+            "name": "IT Magnus",
+            "points": 100
+        },
+        {
+            "conditions": {
+				"completeNamedTopic": "Binary conversion"
+            },
+            "description": "Complete the Binary conversion topic",
+            "name": "Christmas nostalgy",
+            "points": 20
+        },
+        {
+            "conditions": {
+				"chapterWithoutErrors": 1
+            },
+            "description": "Complete a chapter with no errors",
+            "name": "Berserkr",
+            "points": 30
+        },
+        {
+            "conditions": {
+				"interactWithArObject": true
+            },
+            "description": "Interact with an AR object",
+            "name": "Knowledge seeker",
+            "points": 15
+        },
+        {
+            "conditions": {
+				"reportFeedback": true
+            },
+            "description": "Report a problem related to a quiz",
+            "name": "Challenge Sentinel",
+            "points": 5
+        },
+        {
+            "conditions": {
+				"completedTopics": 1,
+				"skipExplanation": true
+            },
+            "description": "Complete a topic skipping the explanation",
+            "name": "Fearless Achilles",
+            "points": 10
+        }
+    ]
+}

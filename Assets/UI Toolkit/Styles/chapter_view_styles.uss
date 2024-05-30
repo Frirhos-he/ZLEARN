@@ -1,0 +1,291 @@
+.single-achievement-view-container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.single-achievement-view-item {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    background-color: rgb(52, 73, 85);
+    color: rgb(217, 217, 217);
+    padding-bottom: 20px;
+}
+
+.single-achievement-view-item:active {
+    scale: 1 1;
+    background-color: rgb(71, 101, 114);
+}
+
+.achievement-description {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 90%;
+}
+
+.achievement-name-label {
+    font-size: 48px;
+    -unity-text-align: middle-left;
+}
+
+.achievement-description-label {
+    font-size: 48px;
+    -unity-text-align: middle-left;
+}
+
+.achievement-completion-bar {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.achievement-completion-bar-label {
+    font-size: 24px;
+    -unity-font-style: normal;
+}
+
+.achievement-progress-bar {
+    width: 50%;
+}
+
+
+
+.unity-progress-bar__background {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(130, 130, 130);
+}
+
+.unity-progress-bar__progress {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(249, 170, 51);
+}
+#achievementsListView .unity-scroller {
+	margin-left: 5px;
+}
+
+#achievementsListView .unity-scroller__high-button {
+    display: none;
+}
+#achievementsListView .unity-scroller__low-button {	
+	display: none;
+}
+#achievementsListView .unity-base-slider__dragger {
+	left: 5px;
+	height: 80px !important;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-left-width: 0;
+	border-bottom-width: 0;
+	border-right-width: 0;
+	border-top-width: 0;
+	background-color: rgb(176, 176, 176);
+}
+#achievementsListView .unity-base-slider__tracker {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 50%;
+	align-self: center;
+	width: 4px;
+	background-color: rgb(74, 101, 114);
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#achievementsListView .unity-base-slider__dragger-border {
+	display: none;
+}
+ 
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item--checked {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item--checked:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__empty-label {
+    display: none;
+}
+
+.unity-text-element--inner-input-field-component {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+TextField > TextInput {
+    background-color: rgba(217, 217, 217, 255);
+}
+
+.single-chapter-view-container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.single-chapter-view-item {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    background-color: rgb(52, 73, 85);
+    color: rgb(217, 217, 217);
+    padding-bottom: 20px;
+}
+
+.single-chapter-view-item:active {
+    scale: 1 1;
+    background-color: rgb(71, 101, 114);
+}
+
+.chapter-description {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 90%;
+}
+
+.chapter-name-label {
+    font-size: 48px;
+    -unity-text-align: middle-left;
+}
+
+.chapter-number-label {
+    font-size: 48px;
+    -unity-text-align: middle-left;
+}
+
+.chapter-completion-bar {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chapter-completion-bar-label {
+    font-size: 24px;
+    -unity-font-style: normal;
+}
+
+.chapter-progress-bar {
+    width: 50%;
+}
+
+.right-arrow-icon {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/UI%20Toolkit/Icons/arrow_back_ios_white_24dp.svg?fileID=7388822144124034973&guid=5ab59bb51ca364bb0a335ce0209d2d3a&type=3#arrow_back_ios_white_24dp');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(217, 217, 217);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    flex-grow: 1;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    rotate: 180deg;
+}
+
+.unity-progress-bar__background {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(130, 130, 130);
+}
+
+.unity-progress-bar__progress {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(249, 170, 51);
+}
+#PageContent .unity-scroller {
+	margin-left: 5px;
+}
+
+#PageContent .unity-scroller__high-button {
+    display: none;
+}
+#PageContent .unity-scroller__low-button {	
+	display: none;
+}
+#PageContent .unity-base-slider__dragger {
+	left: 5px;
+	height: 80px !important;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-left-width: 0;
+	border-bottom-width: 0;
+	border-right-width: 0;
+	border-top-width: 0;
+	background-color: rgb(176, 176, 176);
+}
+#PageContent .unity-base-slider__tracker {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 50%;
+	align-self: center;
+	width: 4px;
+	background-color: rgb(74, 101, 114);
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#PageContent .unity-base-slider__dragger-border {
+	display: none;
+}
+ 
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item--checked {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item--checked:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__empty-label {
+    display: none;
+}
+
+.unity-text-element--inner-input-field-component {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+TextField > TextInput {
+    background-color: rgba(217, 217, 217, 255);
+}

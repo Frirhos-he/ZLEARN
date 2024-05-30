@@ -1,0 +1,79 @@
+.unity-toggle {
+    margin-bottom: 50px;
+}
+
+.unity-toggle__label {
+    color: rgb(27, 27, 27);
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 50%;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: middle-right;
+}
+
+.unity-toggle__checkmark {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    border-width: 3px;
+    background-color: white;
+}
+
+.unity-toggle__input:focus {
+    border-color: rgb(27, 27, 27);
+}
+
+.unity-slider {
+    margin-bottom: 50px;
+}
+
+.unity-slider__label {
+    color: rgb(27, 27, 27);
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 50%;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: middle-right;
+}
+
+.unity-base-slider__tracker {
+    background-color: rgb(27, 27, 27);
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.unity-base-slider__dragger {
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    margin-top: -15px;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.unity-text-field__placeholder > .unity-base-text-field__input {
+    color: #969696
+}
+
+.unity-text-field__input {
+    padding: 20px;
+    margin: 0;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+.unity-text-element--inner-input-field-component {
+    font-size: 30px;
+}

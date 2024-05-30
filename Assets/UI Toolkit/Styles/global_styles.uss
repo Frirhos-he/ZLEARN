@@ -1,0 +1,422 @@
+.button-primary {
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 420px;
+    height: 100px;
+    background-color: rgb(249, 170, 51);
+    font-size: 30px;
+    -unity-font-style: bold;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.button-primary:disabled {
+    background-color: rgb(217, 217, 217);
+}
+
+.button-secondary {
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 420px;
+    height: 100px;
+    background-color: rgb(217, 217, 217);
+    font-size: 30px;
+    -unity-font-style: bold;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.button-primary:active {
+    scale: 1.1 1.1;
+    background-color: rgb(255, 153, 0);
+}
+
+.button-secondary:active {
+    scale: 1.1 1.1;
+    background-color: rgb(176, 176, 176);
+}
+
+.settings-popup {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    -unity-font-definition: url('project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Regular%20SDF.asset?fileID=11400000&guid=b00a95ae7fff742bd952d67712ff3b89&type=2#Montserrat-Regular SDF');
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.settings-popup-fadein {
+    opacity: 1;
+}
+
+.navbar-button {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.navbar-button:active {
+    scale: 1.05 1.05;
+}
+
+.navbar-tab {
+    flex-grow: 0;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 100px;
+    background-image: none;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    -unity-background-scale-mode: stretch-to-fill;
+    scale: 1 1;
+    align-items: center;
+    justify-content: center;
+    border-left-color: rgba(249, 170, 51, 0);
+    border-right-color: rgba(249, 170, 51, 0);
+    border-top-color: rgba(249, 170, 51, 0);
+    border-bottom-color: rgba(249, 170, 51, 0);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-tab-active {
+    border-left-color: rgb(249, 170, 51);
+    border-right-color: rgb(249, 170, 51);
+    border-top-color: rgb(249, 170, 51);
+    border-bottom-color: rgb(249, 170, 51);
+}
+
+.popup-header {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
+    width: 100%;
+    height: auto;
+    font-size: 64px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+}
+
+.popup-subheader {
+    width: 80%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+    -unity-font-style: bold;
+    color: rgb(121, 172, 255);
+    font-size: 48px;
+}
+
+.view-header {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    width: auto;
+    height: auto;
+    font-size: 84px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    color: rgb(217, 217, 217);
+}
+
+.view-subheader {
+    color: rgb(121, 172, 255);
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 48px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+}
+
+.icon-button {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/UI%20Toolkit/Icons/arrow_back_ios_white_24dp.svg?fileID=7388822144124034973&guid=5ab59bb51ca364bb0a335ce0209d2d3a&type=3#arrow_back_ios_white_24dp');
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(27, 27, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    flex-grow: 1;
+    position: relative;
+    left: auto;
+    top: auto;
+}
+
+.icon-button:active {
+    scale: 1.1 1.1;
+}
+
+.icon-button-container {
+    flex-grow: 1;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 120px;
+    height: 85px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    background-color: rgb(217, 217, 217);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.back-button-container-active {
+    background-color: rgb(176, 176, 176);
+    scale: 1.1 1.1;
+}
+
+.start-view-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(35, 47, 52);
+    justify-content: space-between;
+    -unity-font-definition: url('project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Regular%20SDF.asset?fileID=11400000&guid=b00a95ae7fff742bd952d67712ff3b89&type=2#Montserrat-Regular SDF');
+}
+
+.divider {
+    flex-grow: 0;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(74, 101, 114);
+    align-self: stretch;
+    scale: 1 1;
+}
+
+.profile-progress-box {
+    flex-grow: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(35, 47, 52);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.radial-progress {
+    min-width: 26px;
+    min-height: 20px;
+    --track-color: rgb(130, 130, 130);
+    --progress-color: rgb(249, 170, 51);
+    --percentage-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+}
+
+.radial-progress__label {
+    -unity-text-align: middle-center;
+    color: rgb(217, 217, 217);
+    -unity-font-definition: url('project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Regular%20SDF.asset?fileID=11400000&guid=b00a95ae7fff742bd952d67712ff3b89&type=2#Montserrat-Regular SDF');
+    font-size: 40px;
+}
+
+.caption-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 0;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+    -unity-text-align: upper-center;
+}
+
+.text-body {
+    -unity-font: url('project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Bold.ttf?fileID=12800000&guid=02226f848713e40d9bc12394b5629cba&type=3#Montserrat-Bold');
+    font-size: 40px;
+    color: rgb(217, 217, 217);
+}
+
+.Answer-card {
+    flex-grow: 1;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+    background-color: rgb(52, 73, 85);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.color_light {
+    color: rgb(217, 217, 217);
+}
+
+.selected {
+    background-color: rgb(217, 217, 217);
+}
+
+.selected Label {
+    color: rgb(27, 27, 27);
+}
+
+.correct-answer {
+    background-color: rgba(35, 120, 52, 0.52);
+}
+
+.correct-answer Label {
+    color: rgb(217, 217, 217);
+}
+
+.wrong-answer {
+    background-color: rgba(255, 52, 52, 0.52);
+}
+
+.wrong-answer Label {
+    color: rgb(217, 217, 217);
+}
+
+.color-red {
+    color: rgb(255, 52, 52);
+}
+
+.color-green {
+    color: rgb(72, 165, 73);
+}
+
+.feedback-popup {
+    flex-grow: 1;
+    width: 60%;
+    height: 50%;
+    background-color: rgb(217, 217, 217);
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    align-self: auto;
+    position: absolute;
+    top: auto;
+    left: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.dialog-container {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.59);
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+
+.dialog-container-fadein {
+    opacity: 1;
+}

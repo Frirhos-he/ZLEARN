@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/global_styles.uss?fileID=7433441132597879392&amp;guid=3cb404f23ae9e48198a4475bae61ee58&amp;type=3#global_styles" />
+    <ui:VisualElement name="RootContainer" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgba(27, 27, 27, 0.47); -unity-font-definition: url(&apos;project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Regular%20SDF.asset?fileID=11400000&amp;guid=b00a95ae7fff742bd952d67712ff3b89&amp;type=2#Montserrat-Regular SDF&apos;); background-image: none; -unity-background-scale-mode: scale-and-crop; -unity-background-image-tint-color: rgb(99, 99, 99); align-items: center; justify-content: center;">
+        <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: flex-end; width: 100%; height: 50%; padding-bottom: 20px;">
+            <ui:Label tabindex="-1" text="ZLearn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="-unity-font: initial; color: rgb(249, 170, 51); font-size: 150px; -unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; -unity-text-align: upper-center;" />
+            <ui:Label tabindex="-1" text="Start learning computer science with Augmented Reality" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Paragraph" style="font-size: 40px; color: rgb(121, 172, 255); -unity-font: initial; width: 100%; -unity-text-align: upper-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-style: bold;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; align-items: center; padding-top: 20px;">
+            <ui:Button text="START" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartButton" class="button-primary" />
+            <ui:Button text="SETTINGS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="button-secondary" />
+            <ui:Button text="QUIT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" class="button-secondary" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

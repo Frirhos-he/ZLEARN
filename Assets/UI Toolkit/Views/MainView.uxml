@@ -1,0 +1,259 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/global_styles.uss?fileID=7433441132597879392&amp;guid=3cb404f23ae9e48198a4475bae61ee58&amp;type=3#global_styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/chapter_view_styles.uss?fileID=7433441132597879392&amp;guid=94e5179279450454fbd59dd0e6fb6a96&amp;type=3#chapter_view_styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/topic_card_styles.uss?fileID=7433441132597879392&amp;guid=2e0fd8166acefdb48a618d305a8e5779&amp;type=3#topic_card_styles" />
+    <ui:VisualElement name="StartViewContainer" class="start-view-container" style="flex-grow: 1;">
+        <SafeAreaManager name="SafeAreaManager">
+            <ui:VisualElement name="ViewContainer" style="flex-grow: 1; width: 100%; height: auto; align-items: center;">
+                <ui:VisualElement name="BackStartButtonContainer" class="icon-button-container" style="padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; display: none;">
+                    <MyButton focusable="true" name="BackStartButton" class="icon-button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="BackTopicsButtonContainer" class="icon-button-container" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; display: none;">
+                    <MyButton focusable="true" name="BackTopicsButton" class="icon-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/format_list_bulleted_white_24dp.svg?fileID=7388822144124034973&amp;guid=c9215d17da39b4190983044af4fa2390&amp;type=3#format_list_bulleted_white_24dp&apos;);" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="Home" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PageTitle" class="view-header" />
+                <ui:VisualElement name="PageContent" style="flex-grow: 1; width: 100%; align-items: center; justify-content: center; height: 70%;">
+                    <ui:VisualElement name="HomeContentView" style="width: 100%; height: 100%; display: flex; flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Select a chapter" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SelectChapterLabel" class="view-subheader" />
+                        <ui:Label tabindex="-1" text="0% Completed Overall" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ChapterPercentageCompletedLabel" class="caption-label" />
+                        <ui:VisualElement name="SearchBarContainer" style="flex-grow: initial; height: 80px; align-items: center; justify-content: center; overflow: visible; flex-direction: row-reverse; align-self: auto; width: 100%;">
+                            <ui:VisualElement name="SearchBarField" style="flex-grow: 0; width: 70%; align-items: center; height: 100%; justify-content: center; flex-shrink: 1; flex-direction: column; align-self: center;">
+                                <ui:TextField picking-mode="Ignore" name="ChapterSearchField" max-length="38" style="height: 80%; width: 100%; justify-content: center; align-items: center; flex-direction: column; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; font-size: 48px; display: flex; flex-shrink: 1; flex-grow: 1; overflow: hidden; margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; text-overflow: ellipsis; color: rgb(27, 27, 27);" />
+                                <ui:VisualElement name="InputLine" style="flex-grow: 0; border-top-color: rgb(27, 27, 27); width: 80%; height: 0; margin-top: -15px; border-top-width: 8px; overflow: visible; visibility: visible; background-color: rgb(27, 27, 27); flex-direction: column; translate: 0 0; flex-shrink: 1; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="SearchBarIcon" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-ricerca.svg?fileID=7388822144124034973&amp;guid=e3a66c4dec04e464eb7500dff763ab1c&amp;type=3#icons8-ricerca&apos;); justify-content: center; width: 5%; height: 85%; flex-shrink: 0; margin-top: 5px; margin-right: -6%; margin-bottom: 0; margin-left: 0; align-items: center; align-self: center; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:ListView focusable="true" name="ChaptersListView" fixed-item-height="200" show-border="true" selection-type="None" show-foldout-header="false" style="align-items: stretch; width: 70%; align-self: center; flex-grow: 1; padding-left: 0; margin-left: 0; margin-top: 20px; margin-bottom: 0;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ProfileContentView" style="flex-grow: 1; display: none; width: 100%; height: 100%; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="ProfileCard" style="flex-grow: 0; width: 70%; height: 90%; background-color: rgb(52, 73, 85); border-top-left-radius: 80px; border-top-right-radius: 80px; border-bottom-right-radius: 80px; border-bottom-left-radius: 80px; align-items: center;">
+                            <ui:VisualElement name="RankingContainer" style="flex-grow: 1; position: absolute; left: 70px; top: 50px; align-items: center; justify-content: center;">
+                                <ui:VisualElement name="RankingIcon" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-trofeo.svg?fileID=7388822144124034973&amp;guid=ccfe388a6437347349cb92a52e806cb6&amp;type=3#icons8-trofeo&apos;); width: 100px; height: 100px;" />
+                                <ui:Label tabindex="-1" text="Rank #101" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RankingLabel" class="caption-label" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ProfilePicture" style="flex-grow: 0; width: 150px; height: 150px; margin-top: 50px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(121, 172, 255); border-right-color: rgb(121, 172, 255); border-top-color: rgb(121, 172, 255); border-bottom-color: rgb(121, 172, 255); border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-utente-uomo-cerchiato.svg?fileID=7388822144124034973&amp;guid=544c3e0b3d8df4c79838586825a362dc&amp;type=3#icons8-utente-uomo-cerchiato&apos;);" />
+                            <ui:Label tabindex="-1" text="Alessio" parse-escape-sequences="true" display-tooltip-when-elided="true" name="UsernameLabel" class="popup-header" style="color: rgb(217, 217, 217); -unity-text-align: upper-center; padding-top: 20px; padding-bottom: 20px; -unity-font-style: bold;" />
+                            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="LogoutButton" class="icon-button" style="position: absolute; width: 60px; height: 60px; top: 70px; left: auto; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/logout_white_24dp.svg?fileID=7388822144124034973&amp;guid=a0b49f74200244c58bab5260fa6b860a&amp;type=3#logout_white_24dp&apos;); -unity-background-image-tint-color: rgb(219, 61, 61); right: 70px;" />
+                            <ui:VisualElement name="Divider" class="divider" style="flex-grow: 0; scale: 0.8 1;" />
+                            <ui:Label tabindex="-1" text="My Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatsLabel" class="popup-subheader" />
+                            <ui:VisualElement name="StatsContainer" style="width: 80%; height: auto; flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-direction: row; justify-content: space-between;">
+                                <ui:VisualElement name="StatBox" style="flex-grow: 0; width: 200px;">
+                                    <ui:VisualElement name="ProgressContainer" class="profile-progress-box">
+                                        <RadialProgress name="ChapterProgress" progress="10" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Chapter Completion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatLabel" class="caption-label" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="StatBox" style="flex-grow: 0; width: 200px;">
+                                    <ui:VisualElement name="ProgressContainer" class="profile-progress-box">
+                                        <RadialProgress name="TopicProgress" progress="15" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Topic Mastery" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatLabel" class="caption-label" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="StatBox" style="flex-grow: 0; width: 200px;">
+                                    <ui:VisualElement name="ProgressContainer" class="profile-progress-box">
+                                        <RadialProgress name="QuizProgress" progress="13" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="AR Quizes Completion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatLabel" class="caption-label" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="StatBox" style="flex-grow: 0; width: 200px;">
+                                    <ui:VisualElement name="ProgressContainer" class="profile-progress-box">
+                                        <RadialProgress name="CourseProgress" progress="2" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Overall Course Progress" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatLabel" class="caption-label" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="AchievementsContentView" style="flex-grow: 1; display: none; width: 100%; height: 100%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-self: center;">
+                        <ui:VisualElement name="AchievementsListView" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 50px; padding-left: 0; margin-top: 0; margin-right: 0; margin-left: 0; align-items: center; justify-content: space-around; align-self: center; height: 75%; flex-direction: column; flex-shrink: 1; width: 80%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="LeaderboardContentView" style="flex-grow: 1; display: none; width: 100%; height: 100%; flex-shrink: 1; align-items: center;">
+                        <ui:VisualElement name="Podium" style="flex-grow: 0; flex-direction: row; align-items: flex-end; width: 100%; align-self: auto; justify-content: center; flex-wrap: nowrap; height: auto; padding-bottom: 50px;">
+                            <ui:VisualElement name="top2" style="width: 280px; height: 280px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; scale: 1 1; background-color: rgb(52, 73, 85); align-items: center; justify-content: center; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-right: 50px;">
+                                <ui:VisualElement name="circle" style="width: 50%; height: 50%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-second-place-ribbon.svg?fileID=7388822144124034973&amp;guid=b117819c8d7334726b83313aa14f6770&amp;type=3#icons8-second-place-ribbon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label tabindex="-1" text="John" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondPlaceNameLabel" class="view-subheader" style="width: 100%; color: rgb(217, 217, 217);" />
+                                <ui:Label tabindex="-1" text="1450 pt" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondPlacePointsLabel" class="caption-label" style="width: 100%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="top1" style="width: 300px; height: 300px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; scale: 1 1; background-color: rgb(52, 73, 85); align-items: center; justify-content: center; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-right: 50px; margin-left: 50px;">
+                                <ui:VisualElement name="circle" style="width: 50%; height: 50%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-first-place-ribbon.svg?fileID=7388822144124034973&amp;guid=868bbaeae616b41a09bb2008b2af0baa&amp;type=3#icons8-first-place-ribbon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label tabindex="-1" text="Sara" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FirstPlaceNameLabel" class="view-subheader" style="width: 100%; color: rgb(217, 217, 217);" />
+                                <ui:Label tabindex="-1" text="1500 pt" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FirstPlacePointsLabel" class="caption-label" style="width: 100%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="top3" style="width: 280px; height: 280px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; scale: 1 1; background-color: rgb(52, 73, 85); align-items: center; justify-content: center; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-left: 50px;">
+                                <ui:VisualElement name="circle" style="width: 50%; height: 50%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-third-place-ribbon.svg?fileID=7388822144124034973&amp;guid=0ee6eff9139c1404a97d174b775d4167&amp;type=3#icons8-third-place-ribbon&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label tabindex="-1" text="Isabella" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThirdPlaceNameLabel" class="view-subheader" style="width: 100%; color: rgb(217, 217, 217);" />
+                                <ui:Label tabindex="-1" text="1300 pt" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThirdPlacePointsLabel" class="caption-label" style="width: 100%;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Leaderboard" style="flex-grow: 0; width: 80%; height: 60%; flex-direction: column; align-items: auto; align-self: auto; border-left-color: rgb(74, 101, 114); border-right-color: rgb(74, 101, 114); border-top-color: rgb(74, 101, 114); border-bottom-color: rgb(74, 101, 114); background-color: rgb(35, 47, 52); justify-content: flex-start; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                            <ui:VisualElement name="Header" style="flex-grow: 0; width: 100%; height: 16%; background-color: rgb(52, 73, 85); flex-direction: row; justify-content: space-between; margin-top: 0; margin-right: 0; margin-bottom: 20px; margin-left: 0; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; padding-top: 10px; padding-bottom: 10px;">
+                                <ui:Label tabindex="-1" text="#" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 10%;" />
+                                <ui:Label tabindex="-1" text="Name" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%;" />
+                                <ui:Label tabindex="-1" text="Country" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%;" />
+                                <ui:Label tabindex="-1" text="Points" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="LeaderboardRows" style="flex-grow: 0; width: 100%; background-color: rgb(52, 73, 85); border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; height: 75%;">
+                                <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 20%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-width: 5px; border-bottom-color: rgb(74, 101, 114);">
+                                    <ui:Label tabindex="-1" text="99" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); width: 10%;" />
+                                    <ui:Label tabindex="-1" text="Aisha" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                    <ui:VisualElement style="flex-grow: 1; width: 30%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/Flags/icons8-pakistan.svg?fileID=7388822144124034973&amp;guid=c240e5a56b05d4cac903a6c51cd782c9&amp;type=3#icons8-pakistan&apos;); height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                                    <ui:Label tabindex="-1" text="1000" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 20%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-width: 5px; border-bottom-color: rgb(74, 101, 114);">
+                                    <ui:Label tabindex="-1" text="100" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); width: 10%;" />
+                                    <ui:Label tabindex="-1" text="Max" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                    <ui:VisualElement style="flex-grow: 1; width: 30%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/Flags/icons8-paesi-bassi.svg?fileID=7388822144124034973&amp;guid=4f0badb0306a3437f82c302a9b0c5352&amp;type=3#icons8-paesi-bassi&apos;); height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                                    <ui:Label tabindex="-1" text="750" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 20%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-width: 5px; border-bottom-color: rgb(74, 101, 114); background-color: rgb(74, 101, 114);">
+                                    <ui:Label tabindex="-1" text="101" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(249, 170, 51); width: 10%;" />
+                                    <ui:Label tabindex="-1" text="Alessio" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: bold; color: rgb(249, 170, 51);" />
+                                    <ui:VisualElement style="flex-grow: 1; width: 30%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/Flags/icons8-italia.svg?fileID=7388822144124034973&amp;guid=3aa6940a919e9472ea0c677640f7b41a&amp;type=3#icons8-italia&apos;); height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                                    <ui:Label tabindex="-1" text="670" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: bold; color: rgb(249, 170, 51);" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 20%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-width: 5px; border-bottom-color: rgb(74, 101, 114);">
+                                    <ui:Label tabindex="-1" text="102" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); width: 10%;" />
+                                    <ui:Label tabindex="-1" text="Miguel" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                    <ui:VisualElement style="flex-grow: 1; width: 30%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/Flags/icons8-spagna.svg?fileID=7388822144124034973&amp;guid=30b7e97c995b644d49f33e9bcecd0dca&amp;type=3#icons8-spagna&apos;); height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                                    <ui:Label tabindex="-1" text="500" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 20%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-color: rgb(176, 176, 176);">
+                                    <ui:Label tabindex="-1" text="103" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); width: 10%;" />
+                                    <ui:Label tabindex="-1" text="Yuki" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                    <ui:VisualElement style="flex-grow: 1; width: 30%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/Flags/icons8-giappone.svg?fileID=7388822144124034973&amp;guid=a20a9f920b0144a7dabb5422ae949b68&amp;type=3#icons8-giappone&apos;); height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                                    <ui:Label tabindex="-1" text="450" parse-escape-sequences="true" display-tooltip-when-elided="true" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="InfoContentView" style="flex-grow: 1; display: none; width: 100%; height: 100%;">
+                        <ui:Label tabindex="-1" text="How it works?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="InfoSubHeader" class="view-subheader" style="padding-top: 30px;" />
+                        <ui:VisualElement name="StepsContainer" style="flex-grow: 1; width: 100%; height: 100%; justify-content: space-around; align-items: center; flex-direction: row; padding-right: 20px; padding-left: 20px; padding-top: 0;">
+                            <ui:VisualElement name="StepCard" style="flex-grow: 0; background-color: rgb(52, 73, 85); width: 22%; height: 80%; border-top-left-radius: 40px; border-bottom-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; background-image: none; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px;">
+                                    <ui:VisualElement name="StepImage" style="flex-grow: 0; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-algorithm.svg?fileID=7388822144124034973&amp;guid=3eeba0e62256e462fab284c443b4763c&amp;type=3#icons8-algorithm&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 25px;">
+                                    <ui:VisualElement name="StepHeader" style="flex-grow: 0; flex-direction: row; width: 100%; height: auto; align-items: center; justify-content: center;">
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                        <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepNumber" class="view-subheader" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 150px; width: 150px; color: rgb(249, 170, 51); background-color: rgb(35, 47, 52); border-top-left-radius: 75px; border-top-right-radius: 75px; border-bottom-right-radius: 75px; border-bottom-left-radius: 75px; -unity-text-align: middle-center; font-size: 100px;" />
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Select a topic to start learning" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepTitle" class="view-subheader" style="width: auto; flex-grow: 0; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-left: 0; padding-left: 0; font-size: 40px; height: auto; padding-top: 20px; padding-bottom: 20px; white-space: normal; -unity-font-style: normal;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="StepCard" style="flex-grow: 0; background-color: rgb(52, 73, 85); width: 22%; height: 80%; border-top-left-radius: 40px; border-bottom-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; background-image: none; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px;">
+                                    <ui:VisualElement name="StepImage" style="flex-grow: 0; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-realt%C3%A0-aumentata.svg?fileID=7388822144124034973&amp;guid=0015a23144e5a4f14bf428df76996814&amp;type=3#icons8-realtà-aumentata&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 25px;">
+                                    <ui:VisualElement name="StepHeader" style="flex-grow: 0; flex-direction: row; width: 100%; height: auto; align-items: center; justify-content: center;">
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                        <ui:Label tabindex="-1" text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepNumber" class="view-subheader" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 150px; width: 150px; color: rgb(249, 170, 51); background-color: rgb(35, 47, 52); border-top-left-radius: 75px; border-top-right-radius: 75px; border-bottom-right-radius: 75px; border-bottom-left-radius: 75px; -unity-text-align: middle-center; font-size: 100px;" />
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Watch the AR animation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepTitle" class="view-subheader" style="width: auto; flex-grow: 0; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-left: 0; padding-left: 0; font-size: 40px; height: auto; padding-top: 20px; padding-bottom: 20px; white-space: normal; -unity-font-style: normal;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="StepCard" style="flex-grow: 0; background-color: rgb(52, 73, 85); width: 22%; height: 80%; border-top-left-radius: 40px; border-bottom-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; background-image: none; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px;">
+                                    <ui:VisualElement name="StepImage" style="flex-grow: 0; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-to-do-list.svg?fileID=7388822144124034973&amp;guid=587e74e73618a4b69ad8e1fd1169352b&amp;type=3#icons8-to-do-list&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 25px;">
+                                    <ui:VisualElement name="StepHeader" style="flex-grow: 0; flex-direction: row; width: 100%; height: auto; align-items: center; justify-content: center;">
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                        <ui:Label tabindex="-1" text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepNumber" class="view-subheader" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 150px; width: 150px; color: rgb(249, 170, 51); background-color: rgb(35, 47, 52); border-top-left-radius: 75px; border-top-right-radius: 75px; border-bottom-right-radius: 75px; border-bottom-left-radius: 75px; -unity-text-align: middle-center; font-size: 100px;" />
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Solve the quiz to earn points" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepTitle" class="view-subheader" style="width: auto; flex-grow: 0; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-left: 0; padding-left: 0; font-size: 40px; height: auto; padding-top: 20px; padding-bottom: 20px; white-space: normal; -unity-font-style: normal;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="StepCard" style="flex-grow: 0; background-color: rgb(52, 73, 85); width: 22%; height: 80%; border-top-left-radius: 40px; border-bottom-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; background-image: none; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px;">
+                                    <ui:VisualElement name="StepImage" style="flex-grow: 0; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-computer-science.svg?fileID=7388822144124034973&amp;guid=c3faade7bb20d416f9cd39dd3ef7595b&amp;type=3#icons8-computer-science&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 50%; padding-top: 25px;">
+                                    <ui:VisualElement name="StepHeader" style="flex-grow: 0; flex-direction: row; width: 100%; height: auto; align-items: center; justify-content: center;">
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                        <ui:Label tabindex="-1" text="4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepNumber" class="view-subheader" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 150px; width: 150px; color: rgb(249, 170, 51); background-color: rgb(35, 47, 52); border-top-left-radius: 75px; border-top-right-radius: 75px; border-bottom-right-radius: 75px; border-bottom-left-radius: 75px; -unity-text-align: middle-center; font-size: 100px;" />
+                                        <ui:VisualElement class="divider" style="flex-grow: 1; align-self: center; scale: 0.8 1;" />
+                                    </ui:VisualElement>
+                                    <ui:Label tabindex="-1" text="Track your progress daily" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StepTitle" class="view-subheader" style="width: auto; flex-grow: 0; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-left: 0; padding-left: 0; font-size: 40px; height: auto; padding-top: 20px; padding-bottom: 20px; white-space: normal; -unity-font-style: normal;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ChapterContentView" style="flex-grow: 1; display: none; width: 100%; -unity-background-scale-mode: stretch-to-fill;">
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SingleChapterCompletionLabel" style="font-size: 27px; color: rgb(174, 174, 174); -unity-text-align: middle-center;" />
+                        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="SingleChapterTopicView" vertical-scroller-visibility="Hidden" mode="Horizontal" style="flex-grow: 1; flex-shrink: 0; width: 100%; height: 100%; margin-left: 0; margin-right: 0;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="QuestionsContentView" style="width: 100%; height: 100%; display: none; flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ScoreLbl" class="popup-header popup-subheader" style="color: rgb(121, 172, 255); padding-bottom: 50px; padding-top: 0; font-size: 48px; padding-right: 0; padding-left: 0; width: 100%;" />
+                        <ui:VisualElement name="QuestionContainer" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-items: stretch; align-self: auto; justify-content: flex-start;">
+                            <ui:VisualElement name="QuestionTextContainer" style="flex-grow: 1; align-items: center; height: 20%; justify-content: flex-end; width: 100%;">
+                                <ui:Label tabindex="-1" text="This topic has no questions" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuestionText" style="padding-right: 20px; padding-left: 20px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/Fonts/Montserrat-Bold.ttf?fileID=12800000&amp;guid=02226f848713e40d9bc12394b5629cba&amp;type=3#Montserrat-Bold&apos;); font-size: 50px; color: rgb(217, 217, 217); -unity-font-style: normal; white-space: normal; width: 80%; -unity-text-align: middle-left; padding-top: 0; padding-bottom: 30px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; height: 100%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; height: 80%; flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; align-self: center; width: 80%;">
+                                <ui:VisualElement name="AnswersContainer" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SubmitContainer" style="flex-grow: 0; padding-top: 20px; padding-right: 40px; padding-bottom: 20px; padding-left: 40px; width: 80%; align-self: center; flex-basis: auto; flex-direction: row; justify-content: space-between; color: rgb(27, 27, 27); -unity-text-outline-color: rgb(0, 0, 0); background-color: rgba(255, 52, 52, 0); border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; margin-bottom: 50px; margin-top: 50px; align-items: center;">
+                            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="answerResultLbl" class="text-body" style="font-size: 50px; -unity-text-align: middle-left;" />
+                            <ui:Button text="CHECK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SubmitButton" class="button-primary button-secondary" style="align-self: flex-end;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="QuizSummaryView" style="flex-grow: 1; width: 100%; display: none; align-items: center;">
+                        <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuizSummaryScoreLbl" class="popup-header popup-subheader" style="color: rgb(121, 172, 255); padding-bottom: 0; padding-top: 0; font-size: 48px; padding-right: 0; padding-left: 0; width: 100%; height: 5%;" />
+                        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="QuizSummaryScrollView" style="flex-grow: 0; display: flex; width: 80%; height: 60%; background-color: rgb(52, 73, 85); border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-right-radius: 60px; border-bottom-left-radius: 60px; margin-top: 50px; margin-bottom: 0;" />
+                        <ui:VisualElement name="SubmitContainer" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; flex-direction: column; color: rgb(27, 27, 27); -unity-text-outline-color: rgb(0, 0, 0); background-color: rgba(255, 52, 52, 0); border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; margin-bottom: 0; height: 35%; margin-top: 0; margin-right: 0; margin-left: 0;">
+                            <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 100%; align-items: center;">
+                                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResultLbl" text="More than 60% of the answers are correct. You have completed the topic!" class="text-body" style="font-size: 40px; -unity-text-align: middle-center; white-space: normal; margin-bottom: 0; width: 80%; padding-top: 50px; padding-right: 0; padding-bottom: 50px; padding-left: 0; margin-top: 0; margin-right: 0; margin-left: 0; height: 100%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; width: 80%; height: auto; align-items: center; align-self: center; padding-bottom: 0; margin-bottom: 50px; padding-top: 0;">
+                                <ui:Button text="REWATCH TOPIC" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RetryButton" class="button-primary" style="align-self: flex-end;" />
+                                <ui:Button text="NEXT TOPIC" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NextTopicButton" class="button-primary" style="align-self: flex-end;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button text="Open AR View" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoToARButton" class="button-primary" style="position: absolute; top: 50px; left: auto; display: none; right: 50px;" />
+            <ui:VisualElement name="Divider" class="divider" style="scale: 1.2 1;" />
+            <ui:VisualElement name="Navbar" style="flex-grow: 0; width: 100%; height: 180px; flex-direction: row; align-items: center; justify-content: center; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(74, 101, 114); border-right-color: rgb(74, 101, 114); border-top-color: rgb(74, 101, 114); border-bottom-color: rgb(74, 101, 114); flex-shrink: 0;">
+                <ui:VisualElement name="ProfileTab" class="navbar-tab">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProfileButton" class="navbar-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-account-di-prova.svg?fileID=7388822144124034973&amp;guid=47c0dc275bcb9419285fa291bd41b76a&amp;type=3#icons8-account-di-prova&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AchievementsTab" class="navbar-tab">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="AchievementsButton" class="navbar-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-obiettivo.svg?fileID=7388822144124034973&amp;guid=09cfe336ef1094317b8e4a237f61683b&amp;type=3#icons8-obiettivo&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="HomeTab" class="navbar-tab navbar-tab-active">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="HomeButton" class="navbar-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-casa.svg?fileID=7388822144124034973&amp;guid=1ec71cae31d564640a9ca04e226f06f0&amp;type=3#icons8-casa&apos;); background-color: rgb(35, 47, 52);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="LeaderboardTab" class="navbar-tab">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="LeaderboardButton" class="navbar-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-classifica.svg?fileID=7388822144124034973&amp;guid=d49e7de0ca8e348bfb273c3ada857a64&amp;type=3#icons8-classifica&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InfoTab" class="navbar-tab">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="InfoButton" class="navbar-button" style="background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/icons8-informazioni.svg?fileID=7388822144124034973&amp;guid=a59f31466b5544aa08f1fbd9d41e4b32&amp;type=3#icons8-informazioni&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </SafeAreaManager>
+        <ui:VisualElement name="DialogContainer" class="dialog-container" style="flex-grow: 1; display: none;">
+            <ui:VisualElement name="ToTitleConfirmationDialog" class="feedback-popup" style="height: 30%; justify-content: center; align-items: center; display: none; width: 60%;">
+                <ui:Label tabindex="-1" text="Are you sure you want to logout?" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-subheader" style="-unity-text-align: upper-center; color: rgb(27, 27, 27); -unity-font-style: bold;" />
+                <ui:Label tabindex="-1" text="Any unsaved progress will be lost" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-subheader" style="-unity-text-align: upper-center; color: rgb(27, 27, 27); -unity-font-style: normal; padding-top: 0; font-size: 40px;" />
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; width: 100%; justify-content: center; padding-bottom: 50px;">
+                    <ui:Button text="NO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoTitleNoButton" class="button-primary" style="background-color: rgb(176, 176, 176); margin-right: 25px;" />
+                    <ui:Button text="YES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoTitleYesButton" class="button-primary" style="background-color: rgb(249, 170, 51); margin-left: 25px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ToTopicsConfirmationDialog" class="feedback-popup" style="height: 35%; justify-content: center; align-items: center; display: none; width: 60%;">
+                <ui:Label tabindex="-1" text="Are you sure you want to exit the quiz and&#10;go to the topics list?" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-subheader" style="-unity-text-align: upper-center; color: rgb(27, 27, 27); -unity-font-style: bold;" />
+                <ui:Label tabindex="-1" text="Any unsaved progress will be lost" parse-escape-sequences="true" display-tooltip-when-elided="true" class="popup-subheader" style="-unity-text-align: upper-center; color: rgb(27, 27, 27); -unity-font-style: normal; padding-top: 0; font-size: 40px;" />
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; width: 100%; justify-content: center;">
+                    <ui:Button text="NO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoTopicsNoButton" class="button-primary" style="background-color: rgb(176, 176, 176); margin-right: 25px;" />
+                    <ui:Button text="YES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GoTopicsYesButton" class="button-primary" style="background-color: rgb(249, 170, 51); margin-left: 25px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

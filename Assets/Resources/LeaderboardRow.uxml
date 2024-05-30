@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Row" style="flex-grow: 0; width: 100%; height: 100%; flex-direction: row; justify-content: space-between; padding-right: 0; padding-left: 0; align-items: center; align-self: auto; padding-top: 15px; padding-bottom: 15px; border-bottom-width: 5px; border-bottom-color: rgb(74, 101, 114);">
+        <ui:Label tabindex="-1" text="99" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlaceNumberLabel" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); width: 10%;" />
+        <ui:Label tabindex="-1" text="Aisha" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NameLabel" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="Flag" style="flex-grow: 1; width: 30%; background-image: none; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+        <ui:Label tabindex="-1" text="1000" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PointsLabel" class="view-subheader" style="height: 100%; -unity-text-align: middle-center; width: 30%; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

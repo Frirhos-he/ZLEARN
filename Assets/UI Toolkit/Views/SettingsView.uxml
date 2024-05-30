@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/global_styles.uss?fileID=7433441132597879392&amp;guid=3cb404f23ae9e48198a4475bae61ee58&amp;type=3#global_styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/settings_view_styles.uss?fileID=7433441132597879392&amp;guid=58146fda9244140ca8e9328c7a8e108d&amp;type=3#settings_view_styles" />
+    <ui:VisualElement name="SettingsPopupContainer" class="settings-popup" style="height: 100%;">
+        <ui:VisualElement name="SettingsPopupWindow" style="flex-grow: 1; width: 50%; height: 55%; background-color: rgb(217, 217, 217); align-items: stretch; justify-content: flex-start; flex-shrink: 1; align-self: auto; position: absolute; top: auto; left: auto; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;">
+            <ui:Label tabindex="-1" text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsTitle" class="popup-header" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseSettingsButton" class="icon-button" style="position: absolute; top: 50px; right: 50px; background-image: url(&apos;project://database/Assets/UI%20Toolkit/Icons/close_white_24dp.svg?fileID=7388822144124034973&amp;guid=4ed5327d5baec452893acce61ff753ff&amp;type=3#close_white_24dp&apos;); -unity-background-scale-mode: scale-and-crop; background-color: rgba(0, 0, 0, 0); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 40px; height: 40px; color: rgba(27, 27, 27, 0); -unity-background-image-tint-color: rgb(0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+            <ui:VisualElement name="SettingsContainer" style="flex-grow: 1; width: 100%; height: 100%; align-items: center; justify-content: flex-start;">
+                <ui:Toggle label="Sound" name="SoundToggle" style="margin-top: 0; margin-right: 0; margin-bottom: 50px; margin-left: 0; width: 100%;" />
+                <ui:Slider picking-mode="Ignore" label="Music volume" value="42" high-value="100" name="VolumeSlider" style="width: 70%; margin-top: 0; margin-right: 0; margin-bottom: 50px; margin-left: 0;" />
+                <ui:Toggle label="Vibration" name="Vibration" style="margin-top: 0; margin-right: 0; margin-bottom: 50px; margin-left: 0; width: 100%;" />
+                <ui:Toggle label="AR uses planes" name="ARSettingsToggle" style="width: 100%;" />
+                <ui:Button text="RESET DATA" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResetSaveFileButton" class="button-primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,4 @@
+* text eol=lf
+* binary eol=auto
+*.cs text eol=crlf
+ProjectSettings.asset text eol=lf
